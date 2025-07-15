@@ -1,0 +1,24 @@
+/\*\*
+
+- This project is a backend service for a blog application.
+-
+- Features:
+- - User authentication and authorization
+- - CRUD operations for blog posts
+- - Commenting system for posts
+- - Category and tag management
+- - RESTful API endpoints for frontend integration
+- - Data validation and error handling
+- - Secure password storage and user session management
+-
+- Technologies:
+- - Node.js with Express.js framework
+- - MongoDB for data storage
+- - JWT for authentication
+-
+- Usage:
+- - Configure environment variables for database and authentication
+- - Run the server to expose API endpoints for blog management
+-
+- Author: [Muhammad Wildan Septiano]
+- \*/
