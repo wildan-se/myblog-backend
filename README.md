@@ -1,4 +1,4 @@
-/**
+
  * 
  * - Proyek ini adalah layanan backend untuk aplikasi blog.
  * 
@@ -22,4 +22,3 @@
  * 
  * - Penulis: [Muhammad Wildan Septiano]
  * 
- */
