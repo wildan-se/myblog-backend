@@ -5,6 +5,8 @@ const {
   loginUser,
   getUserProfile,
   registerAdminUser,
+  forgotPassword,
+  resetPassword,
 } = require("../controllers/authController");
 const { protect } = require("../middlewares/authMiddleware");
 
@@ -41,6 +43,20 @@ router.post(
     check("adminSecretKey", "Kunci rahasia admin wajib diisi").notEmpty(),
   ],
   registerAdminUser
+);
+router.post(
+  "/forgot-password",
+  [check("email", "Silakan sertakan email yang valid").isEmail()],
+  forgotPassword
+);
+router.put(
+  "/reset-password/:resetToken",
+  [
+    check("password", "Kata sandi harus minimal 6 karakter").isLength({
+      min: 6,
+    }),
+  ],
+  resetPassword
 );
 
 module.exports = router;
